@@ -11,6 +11,6 @@
     "href": "about.html",
     "title": "Intro prob",
     "section": "",
-    "text": "Q1 \\(\\star \\star \\star\\)\nOn définit les événements \\(A\\), \\(B\\) et \\(C\\) et les probabilités \\(P(A)\\), \\(P(B)\\) et \\(P(C)\\). Que vaut \\(P(A)\\) dans les cas suivants?\n\\(A\\) et \\(B\\) sont indépendants, \\(P(B)=0,3\\) et \\(P(A\\cup B)= 0,7\\)?"
+    "text": "Q1 \\(\\star \\star \\star\\)\nOn définit les événements \\(A\\), \\(B\\) et \\(C\\) et les probabilités \\(P(A)\\), \\(P(B)\\) et \\(P(C)\\). Que vaut \\(P(A)\\) dans les cas suivants?\n\\(A\\) et \\(B\\) sont indépendants, \\(P(B)=0,3\\) et \\(P(A\\cup B)= 0,7\\)?\nQ2 \\(\\star \\star \\star\\)\nLa variable aléatoire \\(X\\) a la fonction de répartition continue suivante: \\[\nF_x(x)=\n\\begin{cases}\n            0&\\text{si $x&lt;0$,}\\\\\n            \\frac{\\sqrt{x}}{5}&\\text{si $0\\leq x \\leq u$,}\\\\\n            1&\\text{si $u&lt;x$.}\n            \\end{cases}\n\\] Que vaut \\(u\\)?"
   }
 ]
