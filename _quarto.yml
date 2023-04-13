@@ -5,7 +5,7 @@ website:
   back-to-top-navigation: false
   sidebar:
     style: "docked"
-    background: "secondary"
+    background: "#BEBEDF"
     search: true
     contents:
       - section: "Chapitres"
