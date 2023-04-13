@@ -15,10 +15,10 @@ Residuals 48   46.55    0.97
 
 À partir de la table d'ANOVA, quelle affirmation parmi les suivantes est vraie?
 
-+ La proportion de la variance totale expliquée par le facteur \texttt{Fromages} est égale à $0,0001$. 
-+ Nous avons 4 niveaux différents pour le facteur \texttt{Fromages}.
-+ La variance du facteur \texttt{Fromages} est environ 20 fois plus grande que la variance du facteur \texttt{Residuals}.
-+ L'hypothèse nulle supposait que les moyennes des différents niveaux du facteur \texttt{Fromages} étaient toutes égales.
++ La proportion de la variance totale expliquée par le facteur $\texttt{Fromages}$ est égale à $0,0001$. 
++ Nous avons 4 niveaux différents pour le facteur $\texttt{Fromages}$.
++ La variance du facteur $\texttt{Fromages}$ est environ 20 fois plus grande que la variance du facteur $\texttt{Residuals}$.
++ L'hypothèse nulle supposait que les moyennes des différents niveaux du facteur $\texttt{Fromages}$ étaient toutes égales.
 
 ## Q2 $\star \star$
 
