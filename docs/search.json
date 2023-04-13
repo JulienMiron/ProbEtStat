@@ -1,0 +1,16 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Probabilités et statistique",
+    "section": "",
+    "text": "Sur ce site, vous retrouvez des exemples d’exercices pour la plupart des chapitres de votre cours. Il peut s’agir de questions qui ont déjà été posées en examen ou non. Certains exercices ont des étoiles. Celles-ci réfèrent à un niveau de difficulté allant de 1 à 5 étoiles (5 étoiles étant la plus difficile). Cette façon de faire n’est qu’un outil vous permettant de savoir quel est le niveau de réussite attendu. Ce n’est pas une science exacte. FFGJGJGJGJGJG"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Intro prob",
+    "section": "",
+    "text": "Q1 \\(\\star \\star \\star\\)\nOn définit les événements \\(A\\), \\(B\\) et \\(C\\) et les probabilités \\(P(A)\\), \\(P(B)\\) et \\(P(C)\\). Que vaut \\(P(A)\\) dans les cas suivants?\n\\(A\\) et \\(B\\) sont indépendants, \\(P(B)=0,3\\) et \\(P(A\\cup B)= 0,7\\)?"
+  }
+]
