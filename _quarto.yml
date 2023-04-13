@@ -11,7 +11,8 @@ website:
       - section: "Chapitres"
         contents:
           - index.qmd
-          - about.qmd
+          - IntroProb.qmd
+          - ANOVA1facteur.qmd
 format:
   html:
     theme: cosmo
