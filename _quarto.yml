@@ -1,0 +1,23 @@
+project:
+  type: website
+  output-dir: docs
+website:
+  back-to-top-navigation: false
+  sidebar:
+    style: "docked"
+    background: "secondary"
+    search: true
+    contents:
+      - section: "Chapitres"
+        contents:
+          - index.qmd
+          - about.qmd
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+
+editor: visual
+lang: fr
+
