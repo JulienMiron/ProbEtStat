@@ -1,5 +1,5 @@
 ---
-title: "ANOVA 1 facteurt"
+title: "ANOVA 1 facteur"
 ---
 
 ## Quarto
