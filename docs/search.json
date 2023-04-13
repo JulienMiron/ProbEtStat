@@ -1,33 +1,5 @@
 [
   {
-    "objectID": "ANOVA1facteur.html",
-    "href": "ANOVA1facteur.html",
-    "title": "ANOVA 1 facteur",
-    "section": "",
-    "text": "Soit la table d’ANOVA suivante obtenue à l’aide de \\(\\texttt{Rcmdr}\\):\nsummary(ANOVAModel) \n          Df  Sum Sq Mean Sq F value Pr(\\&gt;F) \nFromages   4  926.12  231.53  238.72  0.0001 \nResiduals 48   46.55    0.97\nÀ partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?\n\nLa proportion de la variance totale expliquée par le facteur \\(\\texttt{Fromages}\\) est égale à \\(0,0001\\).\nNous avons 4 niveaux différents pour le facteur \\(\\texttt{Fromages}\\).\nLa variance du facteur \\(\\texttt{Fromages}\\) est environ 20 fois plus grande que la variance du facteur \\(\\texttt{Residuals}\\).\nL’hypothèse nulle supposait que les moyennes des différents niveaux du facteur \\(\\texttt{Fromages}\\) étaient toutes égales."
-  },
-  {
-    "objectID": "ANOVA1facteur.html#q1-star-star-star",
-    "href": "ANOVA1facteur.html#q1-star-star-star",
-    "title": "ANOVA 1 facteur",
-    "section": "",
-    "text": "Soit la table d’ANOVA suivante obtenue à l’aide de \\(\\texttt{Rcmdr}\\):\nsummary(ANOVAModel) \n          Df  Sum Sq Mean Sq F value Pr(\\&gt;F) \nFromages   4  926.12  231.53  238.72  0.0001 \nResiduals 48   46.55    0.97\nÀ partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?\n\nLa proportion de la variance totale expliquée par le facteur \\(\\texttt{Fromages}\\) est égale à \\(0,0001\\).\nNous avons 4 niveaux différents pour le facteur \\(\\texttt{Fromages}\\).\nLa variance du facteur \\(\\texttt{Fromages}\\) est environ 20 fois plus grande que la variance du facteur \\(\\texttt{Residuals}\\).\nL’hypothèse nulle supposait que les moyennes des différents niveaux du facteur \\(\\texttt{Fromages}\\) étaient toutes égales."
-  },
-  {
-    "objectID": "ANOVA1facteur.html#q2-star-star",
-    "href": "ANOVA1facteur.html#q2-star-star",
-    "title": "ANOVA 1 facteur",
-    "section": "Q2 \\(\\star \\star\\)",
-    "text": "Q2 \\(\\star \\star\\)\nPour que l’analyse de la variance à 1 facteur soit valide, il faut qu’au moins un des postulats soit respecté.\n\nVrai\nFaux"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Accueil",
-    "section": "",
-    "text": "Sur ce site, vous retrouvez des exemples d’exercices pour la plupart des chapitres de votre cours. Il peut s’agir de questions qui ont déjà été posées en examen ou non. Certains exercices ont des étoiles. Celles-ci réfèrent à un niveau de difficulté allant de 1 à 5 étoiles (5 étoiles étant la plus difficile). Cette façon de faire n’est qu’un outil vous permettant de savoir quel est le niveau de réussite attendu. Ce n’est pas une science exacte. FFGJGJGJGJGJG\nCeci est un test en plus.fff"
-  },
-  {
     "objectID": "IntroProbTheo.html",
     "href": "IntroProbTheo.html",
     "title": "Introduction aux probabilités",
@@ -61,6 +33,34 @@
     "title": "Intro prob",
     "section": "Q2 \\(\\star \\star \\star\\)",
     "text": "Q2 \\(\\star \\star \\star\\)\nLa variable aléatoire \\(X\\) a la fonction de répartition continue suivante: \\[\nF_x(x)=\n\\begin{cases}\n            0&\\text{si $x&lt;0$,}\\\\\n            \\frac{\\sqrt{x}}{5}&\\text{si $0\\leq x \\leq u$,}\\\\\n            1&\\text{si $u&lt;x$.}\n            \\end{cases}\n\\] Que vaut \\(u\\)?"
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Accueil",
+    "section": "",
+    "text": "Site de Julien Miron"
+  },
+  {
+    "objectID": "ANOVA1facteur.html",
+    "href": "ANOVA1facteur.html",
+    "title": "ANOVA 1 facteur",
+    "section": "",
+    "text": "Soit la table d’ANOVA suivante obtenue à l’aide de \\(\\texttt{Rcmdr}\\):\nsummary(ANOVAModel) \n          Df  Sum Sq Mean Sq F value Pr(\\&gt;F) \nFromages   4  926.12  231.53  238.72  0.0001 \nResiduals 48   46.55    0.97\nÀ partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?\n\nLa proportion de la variance totale expliquée par le facteur \\(\\texttt{Fromages}\\) est égale à \\(0,0001\\).\nNous avons 4 niveaux différents pour le facteur \\(\\texttt{Fromages}\\).\nLa variance du facteur \\(\\texttt{Fromages}\\) est environ 20 fois plus grande que la variance du facteur \\(\\texttt{Residuals}\\).\nL’hypothèse nulle supposait que les moyennes des différents niveaux du facteur \\(\\texttt{Fromages}\\) étaient toutes égales."
+  },
+  {
+    "objectID": "ANOVA1facteur.html#q1-star-star-star",
+    "href": "ANOVA1facteur.html#q1-star-star-star",
+    "title": "ANOVA 1 facteur",
+    "section": "",
+    "text": "Soit la table d’ANOVA suivante obtenue à l’aide de \\(\\texttt{Rcmdr}\\):\nsummary(ANOVAModel) \n          Df  Sum Sq Mean Sq F value Pr(\\&gt;F) \nFromages   4  926.12  231.53  238.72  0.0001 \nResiduals 48   46.55    0.97\nÀ partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?\n\nLa proportion de la variance totale expliquée par le facteur \\(\\texttt{Fromages}\\) est égale à \\(0,0001\\).\nNous avons 4 niveaux différents pour le facteur \\(\\texttt{Fromages}\\).\nLa variance du facteur \\(\\texttt{Fromages}\\) est environ 20 fois plus grande que la variance du facteur \\(\\texttt{Residuals}\\).\nL’hypothèse nulle supposait que les moyennes des différents niveaux du facteur \\(\\texttt{Fromages}\\) étaient toutes égales."
+  },
+  {
+    "objectID": "ANOVA1facteur.html#q2-star-star",
+    "href": "ANOVA1facteur.html#q2-star-star",
+    "title": "ANOVA 1 facteur",
+    "section": "Q2 \\(\\star \\star\\)",
+    "text": "Q2 \\(\\star \\star\\)\nPour que l’analyse de la variance à 1 facteur soit valide, il faut qu’au moins un des postulats soit respecté.\n\nVrai\nFaux"
   },
   {
     "objectID": "ANOVA1facteurTheo.html",
