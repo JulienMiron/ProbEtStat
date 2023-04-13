@@ -4,17 +4,18 @@ title: "ANOVA 1 facteur"
 
 ## Q1 $\star \star \star$
 
-On définit les événements $A$, $B$ et $C$ et les probabilités $P(A)$, $P(B)$ et $P(C)$. Que vaut $P(A)$ dans les cas suivants?
+Soit la table d'ANOVA suivante obtenue à l'aide de $\texttt{Rcmdr}$:
 
-$A$ et $B$ sont indépendants, $P(B)=0,3$ et $P(A\cup B)= 0,7$?
+> summary(ANOVAModel) Df Sum Sq Mean Sq F value Pr(\>F)\
+> Fromages 4 926.12 231.53 238.72 0.0001 Residuals 48 46.55 0.97
 
-## Q2 $\star \star \star$
+À partir de la table d'ANOVA, quelle affirmation parmi les suivantes est vraie?
 
-La variable aléatoire $X$ a la fonction de répartition continue suivante: $$
-F_x(x)=
-\begin{cases}
-            0&\text{si $x<0$,}\\
-            \frac{\sqrt{x}}{5}&\text{si $0\leq x \leq u$,}\\
-            1&\text{si $u<x$.}
-            \end{cases}
-$$ Que vaut $u$?
+$$
+\begin{itemize}
+\item La proportion de la variance totale expliquée par le facteur \texttt{Fromages} est égale à $0,0001$. 
+\item Nous avons 4 niveaux différents pour le facteur \texttt{Fromages}.
+\item La variance du facteur \texttt{Fromages} est environ 20 fois plus grande que la variance du facteur \texttt{Residuals}.
+\item L'hypothèse nulle supposait que les moyennes des différents niveaux du facteur \texttt{Fromages} étaient toutes égales.
+\end{itemize}
+$$

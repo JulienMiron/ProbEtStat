@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Probabilités et statistique</title>
+<title>ANOVA 1 facteur</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,6 +59,8 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
+  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -72,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Chapitres</a></li><li class="breadcrumb-item"><a href="./index.html">Probabilités et statistique</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Chapitres</a></li><li class="breadcrumb-item"><a href="./ANOVA1facteur.html">ANOVA 1 facteur</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
@@ -103,7 +105,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Probabilités et statistique</span></a>
   </div>
 </li>
@@ -115,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ANOVA1facteur.html" class="sidebar-item-text sidebar-link">
+  <a href="./ANOVA1facteur.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">ANOVA 1 facteur</span></a>
   </div>
 </li>
@@ -127,15 +129,20 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Sur cette page</h2>
+   
+  <ul>
+  <li><a href="#q1-star-star-star" id="toc-q1-star-star-star" class="nav-link active" data-scroll-target="#q1-star-star-star">Q1 <span class="math inline">\(\star \star \star\)</span></a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Probabilités et statistique</h1>
-<p class="subtitle lead">STT-1000, STT-1900, STT-1920, MQT-1102</p>
+<h1 class="title">ANOVA 1 facteur</h1>
 </div>
 
 
@@ -150,10 +157,25 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<p>Sur ce site, vous retrouvez des exemples d’exercices pour la plupart des chapitres de votre cours. Il peut s’agir de questions qui ont déjà été posées en examen ou non. Certains exercices ont des étoiles. Celles-ci réfèrent à un niveau de difficulté allant de 1 à 5 étoiles (5 étoiles étant la plus difficile). Cette façon de faire n’est qu’un outil vous permettant de savoir quel est le niveau de réussite attendu. Ce n’est pas une science exacte. FFGJGJGJGJGJG</p>
-<p>Ceci est un test en plus.fff</p>
+<section id="q1-star-star-star" class="level2">
+<h2 class="anchored" data-anchor-id="q1-star-star-star">Q1 <span class="math inline">\(\star \star \star\)</span></h2>
+<p>Soit la table d’ANOVA suivante obtenue à l’aide de <span class="math inline">\(\texttt{Rcmdr}\)</span>:</p>
+<blockquote class="blockquote">
+<p>summary(ANOVAModel) Df Sum Sq Mean Sq F value Pr(&gt;F)<br>
+Fromages 4 926.12 231.53 238.72 0.0001 Residuals 48 46.55 0.97</p>
+</blockquote>
+<p>À partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?</p>
+<p><span class="math display">\[
+\begin{itemize}
+\item La proportion de la variance totale expliquée par le facteur \texttt{Fromages} est égale à $0,0001$.
+\item Nous avons 4 niveaux différents pour le facteur \texttt{Fromages}.
+\item La variance du facteur \texttt{Fromages} est environ 20 fois plus grande que la variance du facteur \texttt{Residuals}.
+\item L'hypothèse nulle supposait que les moyennes des différents niveaux du facteur \texttt{Fromages} étaient toutes égales.
+\end{itemize}
+\]</span></p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
