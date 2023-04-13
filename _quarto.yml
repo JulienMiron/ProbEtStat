@@ -8,7 +8,12 @@ website:
     background: "#BEBEDF"
     search: true
     contents:
-      - section: "Chapitres"
+      - section: "Théorie"
+        contents: 
+          - index.qmd
+          - IntroProbTheo.qmd
+          - ANOVA1facteurTheo.qmd
+      - section: "Exercices"
         contents:
           - index.qmd
           - IntroProb.qmd

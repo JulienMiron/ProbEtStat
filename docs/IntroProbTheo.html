@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ANOVA 1 facteur</title>
+<title>Introduction aux probabilités</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -59,8 +59,6 @@ ul.task-list li input[type="checkbox"] {
   }
 }</script>
 
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
 
 <link rel="stylesheet" href="styles.css">
 </head>
@@ -74,7 +72,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Exercices</a></li><li class="breadcrumb-item"><a href="./ANOVA1facteur.html">ANOVA 1 facteur</a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Théorie</a></li><li class="breadcrumb-item"><a href="./IntroProbTheo.html">Introduction aux probabilités</a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Basculer la barre latérale" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="Recherche" onclick="window.quartoOpenSearch();">
@@ -111,7 +109,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./IntroProbTheo.html" class="sidebar-item-text sidebar-link">
+  <a href="./IntroProbTheo.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Introduction aux probabilités</span></a>
   </div>
 </li>
@@ -146,7 +144,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./ANOVA1facteur.html" class="sidebar-item-text sidebar-link active">
+  <a href="./ANOVA1facteur.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANOVA 1 facteur</span></a>
   </div>
 </li>
@@ -162,8 +160,7 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Sur cette page</h2>
    
   <ul>
-  <li><a href="#q1-star-star-star" id="toc-q1-star-star-star" class="nav-link active" data-scroll-target="#q1-star-star-star">Q1 <span class="math inline">\(\star \star \star\)</span></a></li>
-  <li><a href="#q2-star-star" id="toc-q2-star-star" class="nav-link" data-scroll-target="#q2-star-star">Q2 <span class="math inline">\(\star \star\)</span></a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link active" data-scroll-target="#quarto">Quarto</a></li>
   </ul>
 </nav>
     </div>
@@ -172,7 +169,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ANOVA 1 facteur</h1>
+<h1 class="title">Introduction aux probabilités</h1>
 </div>
 
 
@@ -187,28 +184,9 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="q1-star-star-star" class="level2">
-<h2 class="anchored" data-anchor-id="q1-star-star-star">Q1 <span class="math inline">\(\star \star \star\)</span></h2>
-<p>Soit la table d’ANOVA suivante obtenue à l’aide de <span class="math inline">\(\texttt{Rcmdr}\)</span>:</p>
-<pre class="verbatim"><code>summary(ANOVAModel) 
-          Df  Sum Sq Mean Sq F value Pr(\&gt;F) 
-Fromages   4  926.12  231.53  238.72  0.0001 
-Residuals 48   46.55    0.97</code></pre>
-<p>À partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?</p>
-<ul>
-<li>La proportion de la variance totale expliquée par le facteur <span class="math inline">\(\texttt{Fromages}\)</span> est égale à <span class="math inline">\(0,0001\)</span>.</li>
-<li>Nous avons 4 niveaux différents pour le facteur <span class="math inline">\(\texttt{Fromages}\)</span>.</li>
-<li>La variance du facteur <span class="math inline">\(\texttt{Fromages}\)</span> est environ 20 fois plus grande que la variance du facteur <span class="math inline">\(\texttt{Residuals}\)</span>.</li>
-<li>L’hypothèse nulle supposait que les moyennes des différents niveaux du facteur <span class="math inline">\(\texttt{Fromages}\)</span> étaient toutes égales.</li>
-</ul>
-</section>
-<section id="q2-star-star" class="level2">
-<h2 class="anchored" data-anchor-id="q2-star-star">Q2 <span class="math inline">\(\star \star\)</span></h2>
-<p>Pour que l’analyse de la variance à 1 facteur soit valide, il faut qu’au moins un des postulats soit respecté.</p>
-<ul>
-<li>Vrai</li>
-<li>Faux</li>
-</ul>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p>Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <a href="https://quarto.org" class="uri">https://quarto.org</a>.</p>
 
 
 </section>
