@@ -47,5 +47,12 @@
     "title": "Intro prob",
     "section": "Q2 \\(\\star \\star \\star\\)",
     "text": "Q2 \\(\\star \\star \\star\\)\nLa variable aléatoire \\(X\\) a la fonction de répartition continue suivante: \\[\nF_x(x)=\n\\begin{cases}\n            0&\\text{si $x&lt;0$,}\\\\\n            \\frac{\\sqrt{x}}{5}&\\text{si $0\\leq x \\leq u$,}\\\\\n            1&\\text{si $u&lt;x$.}\n            \\end{cases}\n\\] Que vaut \\(u\\)?"
+  },
+  {
+    "objectID": "ANOVA1facteur.html#q2-star-star",
+    "href": "ANOVA1facteur.html#q2-star-star",
+    "title": "ANOVA 1 facteur",
+    "section": "Q2 \\(\\star \\star\\)",
+    "text": "Q2 \\(\\star \\star\\)\nPour que l’analyse de la variance à 1 facteur soit valide, il faut qu’au moins un des postulats soit respecté.\n\nVrai\nFaux"
   }
 ]
