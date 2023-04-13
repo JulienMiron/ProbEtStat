@@ -160,19 +160,17 @@ ul.task-list li input[type="checkbox"] {
 <section id="q1-star-star-star" class="level2">
 <h2 class="anchored" data-anchor-id="q1-star-star-star">Q1 <span class="math inline">\(\star \star \star\)</span></h2>
 <p>Soit la table d’ANOVA suivante obtenue à l’aide de <span class="math inline">\(\texttt{Rcmdr}\)</span>:</p>
-<blockquote class="blockquote">
-<p>summary(ANOVAModel) Df Sum Sq Mean Sq F value Pr(&gt;F)<br>
-Fromages 4 926.12 231.53 238.72 0.0001 Residuals 48 46.55 0.97</p>
-</blockquote>
+<pre class="verbatim"><code>summary(ANOVAModel) 
+          Df  Sum Sq Mean Sq F value Pr(\&gt;F) 
+Fromages   4  926.12  231.53  238.72  0.0001 
+Residuals 48   46.55    0.97</code></pre>
 <p>À partir de la table d’ANOVA, quelle affirmation parmi les suivantes est vraie?</p>
-<p><span class="math display">\[
-\begin{itemize}
-\item La proportion de la variance totale expliquée par le facteur \texttt{Fromages} est égale à $0,0001$.
-\item Nous avons 4 niveaux différents pour le facteur \texttt{Fromages}.
-\item La variance du facteur \texttt{Fromages} est environ 20 fois plus grande que la variance du facteur \texttt{Residuals}.
-\item L'hypothèse nulle supposait que les moyennes des différents niveaux du facteur \texttt{Fromages} étaient toutes égales.
-\end{itemize}
-\]</span></p>
+<ol class="example" type="1">
+<li>La proportion de la variance totale expliquée par le facteur est égale à <span class="math inline">\(0,0001\)</span>.</li>
+<li>Nous avons 4 niveaux différents pour le facteur .</li>
+<li>La variance du facteur est environ 20 fois plus grande que la variance du facteur .</li>
+<li>L’hypothèse nulle supposait que les moyennes des différents niveaux du facteur étaient toutes égales.</li>
+</ol>
 
 
 </section>
