@@ -1,6 +1,33 @@
 /* css styles */
 body {
-  font-family: Trebuchet MS, sans-serif;
+  font-family: Gill Sans, sans-serif;
   background-color: lavender;
   color: navy;
+  font-size: 16px;
+}
+
+code {
+  font-size: 1.2em;
+  background-color: #f8f8f8;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 2px 4px;
+}
+
+.def1 {
+  font-style: italic;
+  color: purple;
+  font-size: 1.2em;
+}
+
+.keyword {
+  font-style: normal;
+  color: purple;
+  font-size: 1.2em;
+}
+
+.exemple {
+  text-transform: uppercase;
+  color: navy;
+  font-size: 1.2em;
 }

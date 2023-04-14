@@ -1,14 +1,14 @@
 {
-    "id": "6EA6C0C9",
-    "path": "~/Documents/GitHub/ProbEtStat/index.qmd",
-    "project_path": "index.qmd",
+    "id": "524ED203",
+    "path": "~/Documents/GitHub/ProbEtStat/ANOVA1facteur.qmd",
+    "project_path": "ANOVA1facteur.qmd",
     "type": "quarto_markdown",
     "hash": "0",
     "contents": "",
     "dirty": false,
-    "created": 1681419599601.0,
+    "created": 1681478679961.0,
     "source_on_save": false,
-    "relative_order": 1,
+    "relative_order": 4,
     "properties": {
         "rmdVisualMode": "false",
         "rmdVisualWrapConfigured": "true",
@@ -16,15 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "1",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "7,0",
-        "scrollLine": "0"
+        "cursorPosition": "24,23",
+        "scrollLine": "0",
+        "rmdVisualModeLocation": "2:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1681420428,
+    "lastKnownWriteTime": 1681478691,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1681420428952,
+    "last_content_update": 1681478691388,
     "read_only": false,
     "read_only_alternatives": []
 }

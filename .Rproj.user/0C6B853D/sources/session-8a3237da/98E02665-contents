@@ -1,6 +1,0 @@
-/* css styles */
-body {
-  font-family: Trebuchet MS, sans-serif;
-  background-color: lavender;
-  color: navy;
-}
