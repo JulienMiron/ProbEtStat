@@ -106,7 +106,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Accueil</span></a>
+ <span class="menu-text">Probabiliés et statistique</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -135,7 +135,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Accueil</span></a>
+ <span class="menu-text">Probabiliés et statistique</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -199,7 +199,30 @@ ul.task-list li input[type="checkbox"] {
 <p><span class="exemple">Exemple</span></p>
 <ul>
 <li><span class="math inline">\(\mathcal{E}_1\)</span>: on lance un dé équilibré à 6 face et on note le résultat de la face du dessus;</li>
-<li><span class="math inline">\(\mathcal{E}_2\)</span>:</li>
+<li><span class="math inline">\(\mathcal{E}_2\)</span>: On lance une pièce de monnaie équilibrée et on note le résultat;</li>
+<li><span class="math inline">\(\mathcal{E}_3\)</span>: On mesure en millimètres la quantité de pluie tombée au mois de septembre à Québec;</li>
+<li><span class="math inline">\(\mathcal{E}_4\)</span>: On compte le nombre de visiteurs dans un musée pendant une heure donnée.</li>
+</ul>
+<p>Les espaces échantillonnaux associés:</p>
+<ul>
+<li><span class="math inline">\(\mathcal{U}_1\)</span>: <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>;</li>
+<li><span class="math inline">\(\mathcal{U}_2\)</span>: {Pile, Face};</li>
+<li><span class="math inline">\(\mathcal{U}_3\)</span>: <span class="math inline">\([0, \infty[=\mathbb{R}^+\)</span>;</li>
+<li><span class="math inline">\(\mathcal{U}_4\)</span>: <span class="math inline">\(\{0,1,2,...\}=\mathbb{N}\)</span>.</li>
+</ul>
+<p><span class="note">À noter: Pour <span class="math inline">\(\mathcal{U}_3\)</span> et <span class="math inline">\(\mathcal{U}_4\)</span>, on parle d’infini. Cet infini est bien sûr théorique, nous n’aurons jamais une infinité de millimètres de pluie ou de visiteurs.</span></p>
+<p>En étudiant les espaces échantillonnaux donnés en exemple, on voit qu’il existe deux types d’espaces échantillonnaux:</p>
+<ul>
+<li>Les espaces échantillonnaux <span class="keyword">discrets</span>: si l’espace échantillonnal est dénombrable, comme <span class="math inline">\(\mathcal{U}_1\)</span>, <span class="math inline">\(\mathcal{U}_2\)</span> et <span class="math inline">\(\mathcal{U}_4\)</span>;</li>
+<li>Les espaces échantillonnaux <span class="keyword">continus</span>: si l’espace échantillonnal est non dénombrable, comme <span class="math inline">\(\mathcal{U}_3\)</span>.</li>
+</ul>
+<p><span class="def1">DÉFINITION: Un sous-ensemble de l’espace échantillonnal <span class="math inline">\(\mathcal{U}\)</span> est appelé un <span class="keyword">événement</span>.</span></p>
+<p>Un événement sera dénoté par une lettre majuscule. Généralement, les lettres utilisées sont les premières de l’alphabet (les dernières sont généralement utilisées pour les variables aléatoires, qui sont vues plus loin), mais il est possible d’utiliser d’autres lettres, pour faciliter la compréhension. Quelques exemples en utilisant les expériences définies plus haut:</p>
+<ul>
+<li>Pour <span class="math inline">\(\mathcal{E}_1\)</span>, <span class="math inline">\(A=\)</span> “le dé affiche un 6”;</li>
+<li>Pour <span class="math inline">\(\mathcal{E}_2\)</span>, <span class="math inline">\(B=\)</span> “la pièce de monnaie affiche Pile”;</li>
+<li>Pour <span class="math inline">\(\mathcal{E}_3\)</span>, <span class="math inline">\(C=\)</span> “Il tombe entre 150mm et 200mm de pluie”;</li>
+<li>Pour <span class="math inline">\(\mathcal{E}_4\)</span>, <span class="math inline">\(D=\)</span> “Aucun visiteur ne s’est présenté”.</li>
 </ul>
 
 

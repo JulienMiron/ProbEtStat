@@ -31,3 +31,9 @@ code {
   color: navy;
   font-size: 1.2em;
 }
+
+.note {
+  text-transform: uppercase;
+  color: red;
+  font-size: 0.8em;
+}
