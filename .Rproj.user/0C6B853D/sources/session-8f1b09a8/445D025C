@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/ProbEtStat/IntroProbTheo.qmd",
     "project_path": "IntroProbTheo.qmd",
     "type": "quarto_markdown",
-    "hash": "0",
+    "hash": "3290886175",
     "contents": "",
     "dirty": false,
     "created": 1681475582615.0,
@@ -16,16 +16,16 @@
         "Source": "Source",
         "docOutlineVisible": "0",
         "rmdVisualCollapsedChunks": "",
-        "cursorPosition": "6,402",
+        "cursorPosition": "5,19",
         "scrollLine": "0",
         "rmdVisualModeLocation": "50:0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1706887287,
+    "lastKnownWriteTime": 1707076236,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1706887287900,
+    "last_content_update": 1707076236827,
     "read_only": false,
     "read_only_alternatives": []
 }

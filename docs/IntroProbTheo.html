@@ -163,6 +163,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#expériences-aléatoires-et-espaces-échantillonnaux" id="toc-expériences-aléatoires-et-espaces-échantillonnaux" class="nav-link active" data-scroll-target="#expériences-aléatoires-et-espaces-échantillonnaux">Expériences aléatoires et espaces échantillonnaux</a></li>
+  <li><a href="#opérations-sur-les-ensembles" id="toc-opérations-sur-les-ensembles" class="nav-link" data-scroll-target="#opérations-sur-les-ensembles">Opérations sur les ensembles</a></li>
   </ul>
 </nav>
     </div>
@@ -188,13 +189,14 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="expériences-aléatoires-et-espaces-échantillonnaux" class="level3">
 <h3 class="anchored" data-anchor-id="expériences-aléatoires-et-espaces-échantillonnaux">Expériences aléatoires et espaces échantillonnaux</h3>
-<p>AAAA Lorsqu’on réalise une expérience aléatoire, on ne connaît pas avec certitude le résultat de cette expérience (d’où le nom expérience <em>aléatoire</em>). Par contre, en théories des probabilités, on sera en mesure de supposer qu’on connaît les résultats possibles de cette expérience. Par exemple, lorsqu’on lance un dé régulier à 6 faces, on sait que tous les résultats possibles sont <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>.</p>
+<p>Lorsqu’on réalise une expérience aléatoire, on ne connaît pas avec certitude le résultat de cette expérience (d’où le nom expérience <em>aléatoire</em>). Par contre, en théories des probabilités, on sera en mesure de supposer qu’on connaît les résultats possibles de cette expérience. Par exemple, lorsqu’on lance un dé régulier à 6 faces, on sait que tous les résultats possibles sont <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>.</p>
 <p><span class="def1">DÉFINITION: L’ensenble de tous les résultats possibles d’une expérience aléatoire est appelé <span class="keyword">espace échantillonnal</span>.</span></p>
 <p>Afin de décrire mathématiquement (ou plus formellement) ces concepts, nous introduirons des éléments de notation.</p>
 <ul>
 <li><span class="math inline">\(\mathcal{E}\)</span>: expérience aléatoire;</li>
-<li><span class="math inline">\(\mathcal{U}\)</span>: espace échantillonnal.</li>
+<li><span class="math inline">\(\mathcal{U}\)</span>, <span class="math inline">\(\mathcal{S}\)</span> ou <span class="math inline">\(\Omega\)</span>: espace échantillonnal.</li>
 </ul>
+<p>Pour la suite, <span class="math inline">\(\mathcal{U}\)</span> sera utilisé.</p>
 <p>Souvent, lorsque plusieurs expériences aléatoires ont lieu, nous les noterons <span class="math inline">\(\mathcal{E}_1,\mathcal{E}_2,...\)</span> et noterons leurs espaces échantillonnaux respectifs <span class="math inline">\(\mathcal{U}_1,\mathcal{U}_2,...\)</span></p>
 <p><span class="exemple">Exemple</span></p>
 <ul>
@@ -216,14 +218,57 @@ ul.task-list li input[type="checkbox"] {
 <li>Les espaces échantillonnaux <span class="keyword">discrets</span>: si l’espace échantillonnal est dénombrable, comme <span class="math inline">\(\mathcal{U}_1\)</span>, <span class="math inline">\(\mathcal{U}_2\)</span> et <span class="math inline">\(\mathcal{U}_4\)</span>;</li>
 <li>Les espaces échantillonnaux <span class="keyword">continus</span>: si l’espace échantillonnal est non dénombrable, comme <span class="math inline">\(\mathcal{U}_3\)</span>.</li>
 </ul>
+<p>On parle d’un ensemble dénombrable lorsqu’il est possible de faire une liste de ses éléments sans en oublier.</p>
 <p><span class="def1">DÉFINITION: Un sous-ensemble de l’espace échantillonnal <span class="math inline">\(\mathcal{U}\)</span> est appelé un <span class="keyword">événement</span>.</span></p>
 <p>Un événement sera dénoté par une lettre majuscule. Généralement, les lettres utilisées sont les premières de l’alphabet (les dernières sont généralement utilisées pour les variables aléatoires, qui sont vues plus loin), mais il est possible d’utiliser d’autres lettres, pour faciliter la compréhension. Quelques exemples en utilisant les expériences définies plus haut:</p>
 <ul>
-<li>Pour <span class="math inline">\(\mathcal{E}_1\)</span>, <span class="math inline">\(A=\)</span> “le dé affiche un 6”;</li>
+<li>Pour <span class="math inline">\(\mathcal{E}_1\)</span>, <span class="math inline">\(A=\)</span> “le dé affiche un 5 ou un 6”;</li>
 <li>Pour <span class="math inline">\(\mathcal{E}_2\)</span>, <span class="math inline">\(B=\)</span> “la pièce de monnaie affiche Pile”;</li>
 <li>Pour <span class="math inline">\(\mathcal{E}_3\)</span>, <span class="math inline">\(C=\)</span> “Il tombe entre 150mm et 200mm de pluie”;</li>
 <li>Pour <span class="math inline">\(\mathcal{E}_4\)</span>, <span class="math inline">\(D=\)</span> “Aucun visiteur ne s’est présenté”.</li>
 </ul>
+<p>Nous pourrions aussi noter les événements comme ceci:</p>
+<ul>
+<li><span class="math inline">\(A=\{5, 6\}\)</span>;</li>
+<li><span class="math inline">\(B=\{\text{Pile}\}\)</span>;</li>
+<li><span class="math inline">\(C=[150, 200]\)</span>;</li>
+<li><span class="math inline">\(D=\{0\}\)</span>.</li>
+</ul>
+</section>
+<section id="opérations-sur-les-ensembles" class="level3">
+<h3 class="anchored" data-anchor-id="opérations-sur-les-ensembles">Opérations sur les ensembles</h3>
+<ul>
+<li>Intersection de <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span>: <span class="math inline">\(A\cap B\)</span></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="IntroProbTheo_files/figure-html/unnamed-chunk-1-1.png" class="img-fluid" width="192"></p>
+</div>
+</div>
+<ul>
+<li>Union de <span class="math inline">\(A\)</span> et <span class="math inline">\(B\)</span>: <span class="math inline">\(A\cup B\)</span></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="IntroProbTheo_files/figure-html/unnamed-chunk-2-1.png" class="img-fluid" width="192"></p>
+</div>
+</div>
+<ul>
+<li>Complément de <span class="math inline">\(A\)</span>: <span class="math inline">\(\overline{A}\)</span></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="IntroProbTheo_files/figure-html/unnamed-chunk-3-1.png" class="img-fluid" width="192"></p>
+</div>
+</div>
+<ul>
+<li>Inclusion de <span class="math inline">\(A\)</span> dans <span class="math inline">\(B\)</span>: <span class="math inline">\(A\subset B\)</span></li>
+</ul>
+<div class="cell">
+<div class="cell-output-display">
+<p><img src="IntroProbTheo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="192"></p>
+</div>
+</div>
 
 
 </section>

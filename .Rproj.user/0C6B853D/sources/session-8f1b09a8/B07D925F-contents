@@ -1,0 +1,19 @@
+cercles <- data.frame(
+  x0 = rep(0, 1),
+  y0 = rep(0, 1),
+  rayons = c(1),
+  noms = c("A"),
+  x_lab = c(1.1),
+  y_lab = c(0.5)
+)
+
+
+# Use coord_fixed to ensure true circularity
+ggplot(data = cercles) +
+  geom_circle(aes(x0 = x0, y0 = y0, 
+                  r = rayons, alpha = 1), fill = "white", alpha = 1) +
+  coord_fixed() + 
+  geom_text(aes(x = x_lab, y = y_lab, 
+                label = noms), size = 4, color = "black") +
+  theme_custom("red")+
+  theme(legend.position = "none")

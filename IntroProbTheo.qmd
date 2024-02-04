@@ -1,10 +1,14 @@
 ---
 title: "Introduction aux probabilités"
+format: 
+  html:
+    fig-width: 2
+    fig-height: 1.5
 ---
 
 ### Expériences aléatoires et espaces échantillonnaux
 
-AAAA Lorsqu'on réalise une expérience aléatoire, on ne connaît pas avec certitude le résultat de cette expérience (d'où le nom expérience *aléatoire*). Par contre, en théories des probabilités, on sera en mesure de supposer qu'on connaît les résultats possibles de cette expérience. Par exemple, lorsqu'on lance un dé régulier à 6 faces, on sait que tous les résultats possibles sont $\{1,2,3,4,5,6\}$.
+Lorsqu'on réalise une expérience aléatoire, on ne connaît pas avec certitude le résultat de cette expérience (d'où le nom expérience *aléatoire*). Par contre, en théories des probabilités, on sera en mesure de supposer qu'on connaît les résultats possibles de cette expérience. Par exemple, lorsqu'on lance un dé régulier à 6 faces, on sait que tous les résultats possibles sont $\{1,2,3,4,5,6\}$.
 
 
 [DÉFINITION: L'ensenble de tous les résultats possibles d'une expérience aléatoire est appelé [espace échantillonnal]{.keyword}.]{.def1}
@@ -13,7 +17,9 @@ AAAA Lorsqu'on réalise une expérience aléatoire, on ne connaît pas avec cert
 Afin de décrire mathématiquement (ou plus formellement) ces concepts, nous introduirons des éléments de notation.
 
 + $\mathcal{E}$: expérience aléatoire;
-+ $\mathcal{U}$: espace échantillonnal.
++ $\mathcal{U}$, $\mathcal{S}$ ou $\Omega$: espace échantillonnal.
+
+Pour la suite, $\mathcal{U}$ sera utilisé.
 
 Souvent, lorsque plusieurs expériences aléatoires ont lieu, nous les noterons $\mathcal{E}_1,\mathcal{E}_2,...$ et noterons leurs espaces échantillonnaux respectifs $\mathcal{U}_1,\mathcal{U}_2,...$
 
@@ -39,12 +45,150 @@ En étudiant les espaces échantillonnaux donnés en exemple, on voit qu'il exis
 + Les espaces échantillonnaux [discrets]{.keyword}: si l'espace échantillonnal est dénombrable, comme $\mathcal{U}_1$, $\mathcal{U}_2$ et $\mathcal{U}_4$;
 + Les espaces échantillonnaux [continus]{.keyword}: si l'espace échantillonnal est non dénombrable, comme $\mathcal{U}_3$.
 
+On parle d'un ensemble dénombrable lorsqu'il est possible de faire une liste de ses éléments sans en oublier.
 
 [DÉFINITION: Un sous-ensemble de l'espace échantillonnal $\mathcal{U}$ est appelé un [événement]{.keyword}.]{.def1}
 
 Un événement sera dénoté par une lettre majuscule. Généralement, les lettres utilisées sont les premières de l'alphabet (les dernières sont généralement utilisées pour les variables aléatoires, qui sont vues plus loin), mais il est possible d'utiliser d'autres lettres, pour faciliter la compréhension. Quelques exemples en utilisant les expériences définies plus haut:
 
-+ Pour $\mathcal{E}_1$, $A=$ "le dé affiche un 6";
++ Pour $\mathcal{E}_1$, $A=$ "le dé affiche un 5 ou un 6";
 + Pour $\mathcal{E}_2$, $B=$ "la pièce de monnaie affiche Pile";
 + Pour $\mathcal{E}_3$, $C=$ "Il tombe entre 150mm et 200mm de pluie";
 + Pour $\mathcal{E}_4$, $D=$ "Aucun visiteur ne s'est présenté".
+
+Nous pourrions aussi noter les événements comme ceci:
+
++ $A=\{5, 6\}$;
++ $B=\{\text{Pile}\}$;
++ $C=[150, 200]$;
++ $D=\{0\}$.
+
+### Opérations sur les ensembles
++ Intersection de $A$ et $B$: $A\cap B$
+```{r}
+#| echo: false
+#| warning: false
+
+library(venn)
+library(ggplot2)
+library(ggpolypath)
+
+theme_custom <- function(bg_color) {
+  theme_void() +
+    theme(
+
+      panel.background = element_rect(fill = bg_color, color = NA),
+            panel.spacing = unit(-1, "cm")
+
+
+    )
+}
+
+
+venn(x = "11", lty = 1, col = "navyblue", ellipse = TRUE, zcolor = "lightgreen", ggplot = T, box = F, opacity = 1) +
+  theme_custom("white")
+
+
+```
+
++ Union de $A$ et $B$: $A\cup B$
+```{r}
+#| echo: false
+#| warning: false
+
+library(venn)
+library(ggplot2)
+library(ggpolypath)
+
+
+
+# Définir les ensembles A, B et leur intersection
+set_A <- c(1, 2, 3, 4, 5)
+set_B <- c(3, 4, 5, 6, 7)
+intersection_AB <- intersect(set_A, set_B)
+
+venn(x = "10+11+01", lty = 1, col = "navyblue", ellipse = TRUE, zcolor = "lightgreen", ggplot = T, borders = T, plotsize = 10, opacity = 1, box = F)
+
+
+```
+
++ Complément de $A$: $\overline{A}$
+```{r}
+#| echo: false
+#| warning: false
+
+library(venn)
+library(ggforce)
+
+theme_custom <- function(bg_color) {
+  theme_void() +
+    theme(
+
+      panel.background = element_rect(fill = bg_color, color = NA),
+            panel.spacing = unit(-1, "cm")
+
+
+    )
+}
+
+cercles <- data.frame(
+  x0 = rep(0, 1),
+  y0 = rep(0, 1),
+  rayons = c(1),
+  noms = c("A"),
+  x_lab = c(1.1),
+  y_lab = c(0.5)
+)
+
+
+# Use coord_fixed to ensure true circularity
+ggplot(data = cercles) +
+  geom_circle(aes(x0 = x0, y0 = y0, 
+                  r = rayons, alpha = 1), fill = "white", alpha = 1) +
+  coord_fixed() + 
+  geom_text(aes(x = x_lab, y = y_lab, 
+                label = noms), size = 4, color = "black") +
+  theme_custom("lightgreen")+
+  theme(legend.position = "none")
+
+
+
+
+```
+
++ Inclusion de $A$ dans $B$: $A\subset B$
+```{r}
+#| echo: false
+#| warning: false
+
+library(venn)
+library(ggplot2)
+library(ggpolypath)
+library(ggforce)
+
+cercles <- data.frame(
+  x0 = rep(0, 2),
+  y0 = rep(0, 2),
+  rayons = c(2, 1),
+  noms = c("A", "B"),
+  x_lab = c(1.1, 2.1),
+  y_lab = c(0.5, 0.75)
+)
+
+
+# Use coord_fixed to ensure true circularity
+ggplot(data = cercles) +
+  geom_circle(aes(x0 = x0, y0 = y0, 
+                  r = rayons)) +
+  coord_fixed() + 
+  geom_text(aes(x = x_lab, y = y_lab, 
+                label = noms), size = 4, color = "black") +
+  theme_custom("white")+
+  theme(legend.position = "none")
+
+
+
+
+```
+
+
