@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/ProbEtStat/styles.css",
     "project_path": "styles.css",
     "type": "css",
-    "hash": "0",
+    "hash": "1176847912",
     "contents": "",
     "dirty": false,
     "created": 1681476087653.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "34,7",
-        "scrollLine": "0"
+        "cursorPosition": "40,5",
+        "scrollLine": "8"
     },
     "folds": "",
-    "lastKnownWriteTime": 1681936648,
+    "lastKnownWriteTime": 1707078218,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1681936648391,
+    "last_content_update": 1707078218864,
     "read_only": false,
     "read_only_alternatives": []
 }

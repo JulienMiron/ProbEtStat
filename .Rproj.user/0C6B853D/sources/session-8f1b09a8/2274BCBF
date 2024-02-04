@@ -3,7 +3,7 @@
     "path": "~/Documents/GitHub/ProbEtStat/_quarto.yml",
     "project_path": "_quarto.yml",
     "type": "yaml",
-    "hash": "0",
+    "hash": "1389174988",
     "contents": "",
     "dirty": false,
     "created": 1681475782590.0,
@@ -12,15 +12,15 @@
     "properties": {
         "source_window_id": "",
         "Source": "Source",
-        "cursorPosition": "13,33",
+        "cursorPosition": "6,24",
         "scrollLine": "0"
     },
     "folds": "",
-    "lastKnownWriteTime": 1681476680,
+    "lastKnownWriteTime": 1707077133,
     "encoding": "UTF-8",
     "collab_server": "",
     "source_window": "",
-    "last_content_update": 1681476680816,
+    "last_content_update": 1707077133332,
     "read_only": false,
     "read_only_alternatives": []
 }

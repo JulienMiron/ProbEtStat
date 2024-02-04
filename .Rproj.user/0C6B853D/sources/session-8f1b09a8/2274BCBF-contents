@@ -4,7 +4,7 @@ project:
 website:
   sidebar:
     style: "docked"
-    background: "#BEBEDF"
+    background: "#B7E5DD"
     search: true
     contents:
       - section: "Théorie"

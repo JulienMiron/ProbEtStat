@@ -190,7 +190,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="expériences-aléatoires-et-espaces-échantillonnaux" class="level3">
 <h3 class="anchored" data-anchor-id="expériences-aléatoires-et-espaces-échantillonnaux">Expériences aléatoires et espaces échantillonnaux</h3>
 <p>Lorsqu’on réalise une expérience aléatoire, on ne connaît pas avec certitude le résultat de cette expérience (d’où le nom expérience <em>aléatoire</em>). Par contre, en théories des probabilités, on sera en mesure de supposer qu’on connaît les résultats possibles de cette expérience. Par exemple, lorsqu’on lance un dé régulier à 6 faces, on sait que tous les résultats possibles sont <span class="math inline">\(\{1,2,3,4,5,6\}\)</span>.</p>
-<p><span class="def1">DÉFINITION: L’ensenble de tous les résultats possibles d’une expérience aléatoire est appelé <span class="keyword">espace échantillonnal</span>.</span></p>
+<p><span class="def1">DÉFINITION: L’ensenble de tous les résultats possibles d’une expérience aléatoire est appelé</span><span class="keyword">espace échantillonnal</span>.</p>
 <p>Afin de décrire mathématiquement (ou plus formellement) ces concepts, nous introduirons des éléments de notation.</p>
 <ul>
 <li><span class="math inline">\(\mathcal{E}\)</span>: expérience aléatoire;</li>
@@ -219,7 +219,7 @@ ul.task-list li input[type="checkbox"] {
 <li>Les espaces échantillonnaux <span class="keyword">continus</span>: si l’espace échantillonnal est non dénombrable, comme <span class="math inline">\(\mathcal{U}_3\)</span>.</li>
 </ul>
 <p>On parle d’un ensemble dénombrable lorsqu’il est possible de faire une liste de ses éléments sans en oublier.</p>
-<p><span class="def1">DÉFINITION: Un sous-ensemble de l’espace échantillonnal <span class="math inline">\(\mathcal{U}\)</span> est appelé un <span class="keyword">événement</span>.</span></p>
+<p><span class="def1">DÉFINITION: Un sous-ensemble de l’espace échantillonnal <span class="math inline">\(\mathcal{U}\)</span> est appelé un</span><span class="keyword">événement</span>.</p>
 <p>Un événement sera dénoté par une lettre majuscule. Généralement, les lettres utilisées sont les premières de l’alphabet (les dernières sont généralement utilisées pour les variables aléatoires, qui sont vues plus loin), mais il est possible d’utiliser d’autres lettres, pour faciliter la compréhension. Quelques exemples en utilisant les expériences définies plus haut:</p>
 <ul>
 <li>Pour <span class="math inline">\(\mathcal{E}_1\)</span>, <span class="math inline">\(A=\)</span> “le dé affiche un 5 ou un 6”;</li>
@@ -269,6 +269,25 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="IntroProbTheo_files/figure-html/unnamed-chunk-4-1.png" class="img-fluid" width="192"></p>
 </div>
 </div>
+<p><span class="def1">DÉFINITION: Des événements qui n’ont aucune intersection sont</span><span class="keyword">mutuellement exclusifs</span>.</p>
+<p>Ceci veut dire qu’un seul de ces événements peut se produire à la fois.</p>
+<p>Par exemple, <span class="math inline">\(A\)</span>, <span class="math inline">\(B\)</span> et <span class="math inline">\(C\)</span> sont mutuellement exclusifs si</p>
+<ul>
+<li><span class="math inline">\(A\cap B=\emptyset\)</span>;</li>
+<li><span class="math inline">\(A\cap C=\emptyset\)</span>;</li>
+<li><span class="math inline">\(B\cap C=\emptyset\)</span>;</li>
+<li><span class="math inline">\(A\cap B \cap C=\emptyset\)</span>.</li>
+</ul>
+<p><span class="quiz">Quiz</span></p>
+<p>Soit l’expérience aléatoire <span class="math inline">\(\mathcal{E}_1\)</span>, qui consiste à noter le résultat d’un dé équilibré à 6 faces et les événements suivants:</p>
+<ul>
+<li><span class="math inline">\(A\)</span>: le résultat est un nombre pair;</li>
+<li><span class="math inline">\(B\)</span>: le résultat est un nombre impair;</li>
+<li><span class="math inline">\(C\)</span>: le résultat est strictement supérieur à 3;</li>
+<li><span class="math inline">\(D\)</span>: le résultat s’écrit en lettres avec un «u»;</li>
+<li><span class="math inline">\(E\)</span>: le résultat est un 5.</li>
+</ul>
+<p>Trouvez toutes les combinaisons d’événements mutuellement exclusifs.</p>
 
 
 </section>
