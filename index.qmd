@@ -3,4 +3,4 @@ title: "Probabiliés et statistique"
 subtitle: "STT-1000, STT-1900, STT-1920"
 ---
 
-Site de Julien Miron test
+Site de Julien Miron

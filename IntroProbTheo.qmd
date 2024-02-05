@@ -74,19 +74,12 @@ library(ggpolypath)
 
 theme_custom <- function(bg_color) {
   theme_void() +
-    theme(
-
-      panel.background = element_rect(fill = bg_color, color = NA),
-            panel.spacing = unit(-1, "cm")
-
-
-    )
+    theme(panel.background = element_rect(fill = bg_color, color = NA),
+            panel.spacing = unit(-1, "cm"))
 }
-
 
 venn(x = "11", lty = 1, col = "navyblue", ellipse = TRUE, zcolor = "lightgreen", ggplot = T, box = F, opacity = 1) +
   theme_custom("white")
-
 
 ```
 
@@ -100,15 +93,12 @@ library(venn)
 library(ggplot2)
 library(ggpolypath)
 
-
-
 # Définir les ensembles A, B et leur intersection
 set_A <- c(1, 2, 3, 4, 5)
 set_B <- c(3, 4, 5, 6, 7)
 intersection_AB <- intersect(set_A, set_B)
 
 venn(x = "10+11+01", lty = 1, col = "navyblue", ellipse = TRUE, zcolor = "lightgreen", ggplot = T, borders = T, plotsize = 10, opacity = 1, box = F)
-
 
 ```
 
@@ -123,37 +113,32 @@ library(ggforce)
 
 theme_custom <- function(bg_color) {
   theme_void() +
-    theme(
-
-      panel.background = element_rect(fill = bg_color, color = NA),
-            panel.spacing = unit(-1, "cm")
-
-
-    )
+    theme(panel.background = element_rect(fill = bg_color, color = NA),
+            panel.spacing = unit(-1, "cm"))
 }
 
 cercles <- data.frame(
-  x0 = rep(0, 1),
-  y0 = rep(0, 1),
-  rayons = c(1),
-  noms = c("A"),
-  x_lab = c(1.1),
-  y_lab = c(0.5)
+  x0 = rep(0, 2),
+  y0 = rep(0, 2),
+  rayons = c(7,3),
+  noms = c("A", "B"),
+  x_lab = c(4.1, 7),
+  y_lab = c(0.5, 0)
 )
 
-
 # Use coord_fixed to ensure true circularity
-ggplot(data = cercles) +
-  geom_circle(aes(x0 = x0, y0 = y0, 
-                  r = rayons, alpha = 1), fill = "white", alpha = 1) +
+ggplot() +
+  geom_circle(data = cercles[1, ], aes(x0 = x0, y0 = y0, 
+                  r = rayons, alpha = 1),
+              color= "lightgreen", fill = "lightgreen", alpha = 1) +
+  geom_circle(data = cercles[2, ], aes(x0 = x0, y0 = y0, 
+                  r = rayons, alpha = 1),
+              color= "black", fill = "white", alpha = 1) +
   coord_fixed() + 
-  geom_text(aes(x = x_lab, y = y_lab, 
+  geom_text(data = cercles[1, ], aes(x = x_lab, y = y_lab, 
                 label = noms), size = 4, color = "black") +
   theme_custom("lightgreen")+
   theme(legend.position = "none")
-
-
-
 
 ```
 
@@ -171,12 +156,11 @@ library(ggforce)
 cercles <- data.frame(
   x0 = rep(0, 2),
   y0 = rep(0, 2),
-  rayons = c(2, 1),
+  rayons = c(2, 0.6),
   noms = c("A", "B"),
-  x_lab = c(1.1, 2.1),
+  x_lab = c(0.8, 2.1),
   y_lab = c(0.5, 0.75)
 )
-
 
 # Use coord_fixed to ensure true circularity
 ggplot(data = cercles) +
@@ -188,9 +172,19 @@ ggplot(data = cercles) +
   theme_custom("white")+
   theme(legend.position = "none")
 
+```
 
-
-
+```{latex}
+\documentclass{standalone}
+\usepackage{tikz}
+\begin{document}
+\begin{tikzpicture}
+    \draw (0,0) -- (2,2);
+    \draw (0,0) -- (2,0);
+    \draw (0,0) -- (0,2);
+    \draw (0,2) -- (2,2) -- (2,0);
+\end{tikzpicture}
+\end{document}
 ```
 
 [DÉFINITION: Des événements qui n'ont aucune intersection sont ]{.def1}[mutuellement exclusifs]{.keyword}.
