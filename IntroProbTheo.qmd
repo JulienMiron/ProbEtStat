@@ -175,7 +175,6 @@ ggplot(data = cercles) +
 ```
 
 ```{latex}
-\documentclass{standalone}
 \usepackage{tikz}
 \begin{document}
 \begin{tikzpicture}
@@ -184,6 +183,8 @@ ggplot(data = cercles) +
     \draw (0,0) -- (0,2);
     \draw (0,2) -- (2,2) -- (2,0);
 \end{tikzpicture}
+
+fgkgkjgjg
 \end{document}
 ```
 
