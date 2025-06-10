@@ -174,19 +174,6 @@ ggplot(data = cercles) +
 
 ```
 
-```{latex}
-\usepackage{tikz}
-\begin{document}
-\begin{tikzpicture}
-    \draw (0,0) -- (2,2);
-    \draw (0,0) -- (2,0);
-    \draw (0,0) -- (0,2);
-    \draw (0,2) -- (2,2) -- (2,0);
-\end{tikzpicture}
-
-fgkgkjgjg
-\end{document}
-```
 
 [DÉFINITION: Des événements qui n'ont aucune intersection sont ]{.def1}[mutuellement exclusifs]{.keyword}.
 
